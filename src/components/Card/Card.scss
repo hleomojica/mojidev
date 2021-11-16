@@ -1,0 +1,25 @@
+@import "../../styles/app";
+
+.img-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.card {
+  border-style: none;
+}
+
+.card-body {
+  padding-right: 0;
+}
+
+.logo-tech {
+  vertical-align: middle;
+  margin-right: 6px;
+  width: 40px;
+  height: 40px;
+}

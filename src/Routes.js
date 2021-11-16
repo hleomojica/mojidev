@@ -27,6 +27,7 @@ import NotificationsPage from '@/pages/Notifications/Notifications';
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [
     { path: "/", redirect: { name: "Dashboard" } },
     {
@@ -40,12 +41,12 @@ export default new Router({
       component: ErrorPage,
     },
     {
-      path: '/app',
-      name: 'Layout',
+      path: '/',
+      name: '',
       component: Layout,
       children: [
         {
-          path: 'dashboard',
+          path: '',
           name: 'Dashboard',
           component: Dashboard,
         },

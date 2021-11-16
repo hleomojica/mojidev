@@ -38,11 +38,15 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: ($content-padding - 40px) $content-padding ($content-padding - 40px) $content-padding ;
+  padding: $conten-padding-b $content-padding $conten-padding-b $content-padding ;
   background-color: $body-bg;
   margin-top: 30px;
 
   @media (max-width: breakpoint-max(sm)) {
+    padding: 20px $content-padding-sm ($content-padding + 30px);
+    margin-top: 70px;
+  }
+  @media (max-width: breakpoint-max(md)) {
     padding: 20px $content-padding-sm ($content-padding + 30px);
     margin-top: 70px;
   }

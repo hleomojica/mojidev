@@ -38,7 +38,7 @@
         <template slot="button-content">
           <i class='fi flaticon-settings-10 px-2' />
         </template>
-        <b-dropdown-item><i class='fi flaticon-person px-3 mr-3' /> My Account</b-dropdown-item>
+        <b-dropdown-item><i class='fi flaticon-person px-3 mr-3' /> Log in</b-dropdown-item>
         <b-dropdown-divider />
         <b-dropdown-item><i class='fi flaticon-calendar-9 px-3 mr-3' />Calendar</b-dropdown-item>
         <b-dropdown-item><i class='fi flaticon-email px-3 mr-3' />
@@ -46,7 +46,7 @@
         </b-dropdown-item>
         <b-dropdown-divider />
         <b-dropdown-item-button @click="logout">
-          <i class="fi flaticon-power-1 px-3 mr-3" /> Log Out
+          <i class="fi flaticon-power-1 px-3 mr-3" /> OFF
         </b-dropdown-item-button>
       </b-nav-item-dropdown>
     </b-nav>
@@ -88,8 +88,8 @@ export default {
       }
     },
     logout() {
-      window.localStorage.setItem('authenticated', false);
-      this.$router.push('/login');
+      // window.localStorage.setItem('authenticated', false);
+      // this.$router.push('/login');
     },
   }
 };
