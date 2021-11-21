@@ -7,6 +7,10 @@
   width: 140px;
   height: 140px;
   border-radius: 50%;
+  @media (max-width: breakpoint-max(sm)) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .card {
@@ -14,7 +18,7 @@
 }
 
 .card-body {
-  padding-right: 0;
+  padding: 0.5rem;
 }
 
 .logo-tech {
@@ -23,3 +27,4 @@
   width: 40px;
   height: 40px;
 }
+

@@ -1,12 +1,12 @@
 <template>
   <div>
-    <b-card class="overflow-hidden">
+    <b-card class="overflow-hidden text-center" >
       <b-row no-gutters>
         <b-col md="4" sm="12">
           <b-card-img
             src="../../assets/me2.jpeg"
             alt="Image"
-            class="img-card"
+            class="img-card img-fluid"
           ></b-card-img>
         </b-col>
         <b-col md="8" sm="12">

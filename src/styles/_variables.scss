@@ -88,7 +88,7 @@ $body-bg-light: lighten($body-bg, 3%);
 //== Components
 //
 
-$grid-gutter-width: 40px;
+$grid-gutter-width: 0.5rem ;
 
 $content-padding: 250px;
 $conten-padding-b: 60px;
@@ -131,7 +131,7 @@ $helper-width: 300px;
 //== Navbar
 //
 
-$navbar-height: 70px !default;
+$navbar-height: 60px !default;
 $navbar-padding-y: 0 !default;
 $navbar-padding-x: 0 !default;
 
@@ -149,8 +149,8 @@ $dropdown-link-color: $text-color;
 
 // Widgets
 // -------------------------
-$widget-padding-vertical: 15px !default;
-$widget-padding-horizontal: 20px !default;
+$widget-padding-vertical: 10px !default;
+$widget-padding-horizontal: 10px !default;
 $widget-bg-color: $white;
 
 //== Navs
