@@ -1,6 +1,7 @@
 @import "../../styles/app";
 
 .app-header.navbar {
+  background-color: $inverse;
   height: $navbar-height;
   z-index: 100;
   padding: 0 1.85rem 0;
@@ -8,7 +9,7 @@
   box-shadow: var(--navbar-shadow);
   transition: $transition-base;
   border: none;
-  font-weight: 500;
+  font-weight: 100;
   justify-content: flex-start;
   position: fixed;
   width: 100%;
@@ -27,6 +28,7 @@
         position: relative;
         padding: 0.5rem;
         color: $navbar-link-color;
+        font-size: 1.5rem;
 
         @include hover {
           color: $navbar-link-hover-color;
@@ -40,6 +42,9 @@
           @include media-breakpoint-down(sm) {
             font-size: 27px;
           }
+        }
+        .fa {
+          color: $goldens;
         }
       }
     }
@@ -167,24 +172,22 @@
 
 .headertex {
   pointer-events: none;
-  font-size: 72px;
-  background: -webkit-linear-gradient(90deg, #0575e6 0%, #021b79 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: $goldens;
   display: flex;
   align-items: center;
   height: 100%;
   position: relative;
-  font-size: 2.5rem;
-  font-weight: 450;
+  font-size: 2rem;
+  font-weight: 160;
   letter-spacing: -1px;
-  .menu{
-    font-size: 1.5rem;
+  .menu {
+    font-size: 2rem;
     font-weight: 250;
   }
-
+  @media (max-width: breakpoint-max(sm)) {
+    font-size: 1.5rem;
+  }
 }
-
 
 // SOCIAL MEDIA BUTTONS
 //variables -- Social
@@ -203,21 +206,18 @@ $font-size: 20px;
 
 .effect {
   width: 100%;
-  background-color: $basic-dark-color;
-  &:nth-child(2n + 1) {
-    background-color: $basic-light-color;
-    h2 {
-      color: $basic-dark-color;
-    }
-  }
+  background-color: $inverse;
+  
   .buttons {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-
-  a {
+  @media (max-width: breakpoint-max(sm)) {
+    background-color: $basic-light-color;
   }
+
+
 }
 
 .effect {
@@ -242,9 +242,9 @@ $font-size: 20px;
     }
     @media (max-width: breakpoint-max(sm)) {
       margin: 0.1rem;
-      width: 1.7rem;
-      height: 1.7rem;
-      font-size: $font-size-sm;
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.5rem;
     }
 
     &.fb {
@@ -287,4 +287,11 @@ $font-size: 20px;
       }
     }
   }
+}
+
+.logo-tech {
+  vertical-align: middle;
+  margin-right: 6px;
+  width: 40px;
+  height: 40px;
 }

@@ -1,31 +1,37 @@
 <template>
-  <b-navbar toggleable="lg" class="header d-print-none app-header">
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-    <b-nav class="d-md-down-none">
+  <b-navbar class="header d-print-none app-header">
+    <b-nav class="pl-4">
       <a href="" class="headertex"> MOJIDEV </a>
     </b-nav>
 
-    <a class="navbarBrand d-md-none">
-      <a href="/" class="headertex"> M D</a>
-    </a>
-
-    <b-collapse id="nav-collapse" is-nav>
+    <b-nav class="d-sm-down-none ml-auto">
       <b-nav class="mx-auto">
         <b-nav-item>
           <a href="/" class="menu"> About me</a>
         </b-nav-item>
-        <b-navbar-nav class="headertex mr-4">
+        <b-nav-item>
           <a href="/" class="menu"> Proyects</a>
-        </b-navbar-nav>
-        <b-navbar-nav class="headertex">
+        </b-nav-item>
+        <b-nav-item>
           <a href="/" class="menu"> Extra</a>
-        </b-navbar-nav>
+        </b-nav-item>
       </b-nav>
-    </b-collapse>
+    </b-nav>
+
+    <b-sidebar id="sidebar-1"  right shadow width="14rem">
+      <div class="px-3 py-2"></div>
+    </b-sidebar>
 
     <b-nav class="ml-auto">
-      <b-navbar-nav>
+      <b-nav class="d-md-none">
+        <b-nav-item id="v-step-0">
+          <a href="#">
+            <i class="fa fa-bars" v-b-toggle.sidebar-1 />
+          </a>
+        </b-nav-item>
+      </b-nav>
+
+      <b-navbar-nav class="pt-2 d-md-down-none">
         <div class="effect egeon">
           <div class="buttons w-100">
             <a
