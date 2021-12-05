@@ -51,6 +51,7 @@ $cyan: #1a86d0 !default;
 $default: #e9ecef !default;
 $inverse: #14213d !default;
 $goldens:#fca311 !default;
+$greypalet:#e5e5e5;
 
 $theme-colors: (
   primary: $blue,
@@ -130,7 +131,7 @@ $helper-width: 300px;
 //== Navbar
 //
 
-$navbar-height: 60px !default;
+$navbar-height: 50px !default;
 $navbar-padding-y: 0 !default;
 $navbar-padding-x: 0 !default;
 

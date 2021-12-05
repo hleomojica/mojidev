@@ -1,0 +1,30 @@
+@import "../../styles/app";
+
+.skills-card {
+  border-style: none !important;
+  .card-header {
+   //padding: 0.5rem;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+
+  }
+  .card-header {
+    background-color: $greypalet;
+  }
+  .nav-item {
+    a {
+      color: $black;
+    }
+
+    &.active a {
+      background-color: $inverse;
+      color: $goldens;
+    }
+  }
+}
+
+.skills-body {
+  position: relative;
+  height: 150px;
+  overflow-y: scroll;
+}
